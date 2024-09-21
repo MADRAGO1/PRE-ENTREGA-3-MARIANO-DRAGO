@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer templñate</title>
+</head>
+<body>
+    <h1> HOLLLAAA </h1>
+
+    <p style="color: red">Mi nombre es: {{nombre}}</p>
+    <p style="color: green">Mi apellido es: {{apellido}}</p>
+
+    <p>
+    {% for n in notas %}
+
+        {% if n < 4  %}
+            <p style="color: red">Mala Nota {{n}}</p>
+        {% else %} <p style="color: blue">Buena Nota: {{n}}</p>
+        {% endif %}
+
+    {% endfor %}
+
+    <p>
+
+</body>
+</html>
