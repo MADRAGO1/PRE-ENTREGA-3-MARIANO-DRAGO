@@ -20,3 +20,32 @@ def lista_musicos(req):
 
   return render(req, 'lista_musicos.html', {"lista_musicos": lista})
 
+
+# Creo vistas
+
+def inicio(req):
+  
+  return render(req, "inicio.html", {})
+
+
+def musicos(req):
+  
+  return render(req, "musicos.html", {})
+
+
+def bandas(req):
+  
+  return render(req, "bandas.html", {})
+
+
+def barandpubs(req):
+  
+  return render(req, "barandpubs.html", {})
+
+def salasensayo(req):
+  
+  return render(req, "salasensayo.html", {})
+
+def productores(req):
+  
+  return render(req, "productores.html", {})
