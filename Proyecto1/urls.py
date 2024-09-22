@@ -16,11 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import saludo, probando_template
+from .views import saludo, probando_template 
+from EncMus.Views import crea_musicos, lista_musicos
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('saludo/',saludo),
     path('probando-template/',probando_template),
+    path('agrega-musico/<nombre>/<apellido>/<instrumento>/<email>/<tel>/<edad>/<dni>', crea_musicos),
+    path('lista-musicos/',lista_musicos), 
     ]

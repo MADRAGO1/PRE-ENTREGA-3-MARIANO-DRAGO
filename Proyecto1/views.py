@@ -28,5 +28,10 @@ def probando_template(self):
 
     return HttpResponse(documento)
 
+def lista_musicos(request):
+    musicos = Musicos.objects.all()  # Reemplaza con tu consulta real
+    print(musicos)  # Imprime los datos para verificar
+    return render(request, 'enc_mus/lista_musicos.html', {'lista_musicos': musicos})
+
 
        
